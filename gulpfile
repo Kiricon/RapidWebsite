@@ -1,7 +1,0 @@
-const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
-const sass = require('gulp-ruby-sass');
-const uglify = require('gulp-uglify');
-const cleanCSS = require('gulp-clean-css'); 
-const cache = require('gulp-cached');
-const fs = require('fs');

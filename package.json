@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/Kiricon/RapidWebsite/issues"
   },
-  "homepage": "https://github.com/Kiricon/RapidWebsite#readme"
+  "homepage": "https://github.com/Kiricon/RapidWebsite#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^3.2.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglify": "^2.1.2"
+  }
 }
