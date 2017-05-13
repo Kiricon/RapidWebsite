@@ -6,7 +6,28 @@
 </head>
 
 <body>
+    <pre>
+        <code class="go">
+package main
+
+import rapid "github.com/Kiricon/Rapid"
+
+func main() {
+    app := rapid.App()
+
+    app.Get("/", func(c rapid.Connection) {
+        c.View("views/index.html")
+    })
+
+    app.StaticFolder("/", "public")
+
+    app.Listen(8080)
+}
+        </code>
+    </pre>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
