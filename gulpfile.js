@@ -7,9 +7,9 @@ const cache = require('gulp-cached');
 const fs = require('fs');
 
 const paths = {
-  sass: "./public/sass/**/*.scss",
+  sass: "./public/scss/**/*.scss",
   js: "./public/js/**/*.js",
-  html: "./public/*.html"
+  html: "./views/*.html"
 }
 
 gulp.task('convertcss', () => {
