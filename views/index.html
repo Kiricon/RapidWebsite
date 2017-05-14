@@ -6,31 +6,38 @@
 </head>
 
 <body>
-    <pre id="goGet"><code class="bash">go get https://github.com/Kiricon/Rapid</code></pre>
-    <main>
-            <div id="mainOverlay"></div>
-    <pre>
+    
+    <section id="demoSection">
         
-        <code class="go">
-package main
+        <div id="mainOverlay"></div>
+        <title>Simple Code</title>
+        <pre>
+            
+            <code class="go">
+    package main
 
-import rapid "github.com/Kiricon/Rapid"
+    import rapid "github.com/Kiricon/Rapid"
 
-func main() {
-    // New instance of server
-    app := rapid.App()
+    func main() {
+        // New instance of server
+        app := rapid.App()
 
-    // Make a path at "/" that returns "Hello World"
-    app.Get("/", func(c rapid.Connection) {
-        c.Send("Hello World")
-    })
+        // Make a path at "/" that returns "Hello World"
+        app.Get("/", func(c rapid.Connection) {
+            c.Send("Hello World")
+        })
 
-    // Make your server listen on port 8080
-    app.Listen(8080)
-}
-        </code>
-    </pre>
-    </main>
+        // Make your server listen on port 8080
+        app.Listen(8080)
+    }
+            </code>
+        </pre>
+    </section>
+
+    <div id="installSection">
+        <pre id="goGet"><code class="bash">go get https://github.com/Kiricon/Rapid</code></pre>
+    </div>
+
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 body, html {
     margin: 0px;
     padding: 0px;
     display: table;
     width: 100%;
+    font-family: 'Roboto Mono', monospace
 }
 
 pre {
@@ -19,12 +21,12 @@ pre {
     }
 }
 
-main {
+#demoSection {
     background: url('https://static.pexels.com/photos/2438/nature-forest-waves-trees.jpg');
     background-size: 100% auto;
     width: 100%;
     background-position: center bottom;
-    height: 400px;
+    height: 450px;
     padding-top: 0px;
     overflow:hidden;
     
@@ -36,6 +38,15 @@ main {
         background: rgba(87, 124, 248, 0.6);
         position: absolute;
         width: 100%;
-        height: 400px;
+        height: 450px;
+    }
+
+    title {
+        font-size: 3em;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        position: relative;
     }
 }
