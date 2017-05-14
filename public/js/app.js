@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => { 
-    let block = document.querySelector('pre code');
-    console.log(block)
-    hljs.highlightBlock(block);
+    let blocks = document.querySelectorAll('pre code');
+    for(let i = 0; i < blocks.length; i++) {
+    hljs.highlightBlock(blocks[i]);
+    }
 });
