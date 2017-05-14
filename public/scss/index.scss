@@ -6,6 +6,15 @@ body, html {
     width: 100%;
     font-family: 'Roboto Mono', monospace
 }
+nav  {
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    height: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 
 pre {
     margin: 20px auto;
@@ -29,6 +38,7 @@ pre {
     height: 450px;
     padding-top: 0px;
     overflow:hidden;
+    margin-top: 50px;
     
     pre {
         margin-top: 35px;
@@ -44,6 +54,18 @@ pre {
     title {
         font-size: 3em;
         color: white;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+}
+
+#installSection {
+    margin-top: 20px;
+    title {
+        font-size: 2em;
+        color: #333;
         display: inline-block;
         text-align: center;
         width: 100%;
