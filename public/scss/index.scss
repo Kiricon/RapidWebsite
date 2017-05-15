@@ -111,10 +111,11 @@ pre {
     width: 95%;
     margin: 0px auto;
     section {
-        width: 30.3%;
-        margin: 0px 1.5%;
+        width: 30%;
+        padding: 0px 1.5%;
         text-align: center;
         float: left;
+        border-right: solid 1px #eee;
         title {
             font-size: 1.5em;
             display: block;
@@ -126,6 +127,10 @@ pre {
 
         a  {
             color: rgba(87, 124, 248, 1);
+        }
+
+        &:last-child {
+            border: 0;
         }
     }
 }
