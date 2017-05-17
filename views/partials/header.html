@@ -1,3 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rapid HTTP Framework</title>
+
+    <style>
+        body, html {
+            margin: 0px;
+            padding: 0px;
+            display: table;
+            width: 100%;
+            font: 400 16px/1.7 proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        nav  {
+            position: fixed;
+            top:0px;
+            width: calc(100% - 20px);
+            background: white;
+            z-index: 1000;
+            height: 30px;
+            padding: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            font-size: 1.1em;
+        }
+
+        #starButton {
+            float: right;
+            display: table;
+        }
+
+        #github {
+            float: right;
+            padding: 0px 10px;
+            cursor: pointer;
+        }
+
+        #title {
+            float: left;
+            color:rgba(87, 124, 248, 1);
+            font-size: 2em;
+            margin-top: -20px;
+            font-family: 'Roboto Mono', monospace
+        }
+
+        #documentation, #quickstart {
+            float: right;
+            padding: 0px 10px;
+            border-right: solid 1px #eee;
+        }
+    </style>
+</head>
+
+<body>
 <nav>
     <div id="title"><a href="/">Rapid</a></div>
 
@@ -14,6 +73,12 @@
     <div id="documentation">
         <a href="https://godoc.org/github.com/Kiricon/Rapid" target="_blank">
         Documentation
+        </a>
+    </div>
+
+    <div id="quickstart">
+        <a href="/quickstart">
+        Quick Start
         </a>
     </div>
 </nav>
